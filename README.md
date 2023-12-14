@@ -7,7 +7,8 @@
 <details>
 <summary style="font-size:15px;cursor:pointer">📌 1. CONFIG SERVICE: (Click to expand 🖱)</summary>
         <h5>Consul registered services:</h5>
-    <img src="captures/all-registered.jpg"></img>
+    <img <img width="1280" alt="Capture d’écran 2023-12-14 à 20 34 22" src="https://github.com/rifaielarbi/web_sr/assets/153360442/8691434c-23f7-4c4b-aefb-7996b7e521a2">
+></img>
 
 
 </details>
@@ -40,19 +41,21 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
 ```javascript
 @Bean
-CommandLineRunner start(CustomerRepository customerRepository){
-        return args -> {
-                customerRepository.saveAll(List.of(
-                        Customer.builder().name("Mohamed").email("med@gmail.com").build(),
-                        Customer.builder().name("Hassan").email("hasan@gmail.com").build(),
-                        Customer.builder().name("IMane").email("imane@gmail.com").build()
-                ));
-                customerRepository.findAll().forEach(System.out::println);
-        };
-}
+	CommandLineRunner start(CustomerRepository customerRepository){
+		return args -> {
+customerRepository.saveAll(List.of(
+		Customer.builder().name("arabi").email("arabi@gmail.com").build(),
+		Customer.builder().name("saad").email("saad@gmail.com").build(),
+		Customer.builder().name("anas").email("anas@gmail.com").build()
+
+		));
+customerRepository.findAll().forEach(System.out::println);
+		};
+	}
 ```
 <h5>Customer service Test</h5>
-<img src="captures/customer-service-test.jpg" width="700">
+<img <img width="1280" alt="Capture d’écran 2023-12-14 à 20 40 37" src="https://github.com/rifaielarbi/web_sr/assets/153360442/1e415f87-8b42-409a-8b38-4c1e742957f0">
+>
 </details>
 <details>
 <summary style="font-size:15px;cursor:pointer">📌 3. GATEWAY-SERVICE (Click to expand 🖱)</summary>
@@ -117,7 +120,8 @@ CommandLineRunner start(ProductRepository productRepository)
 ```
 
 <h5>Test de l'inventory service</h5>
-        <img src="captures/inventory-test-.jpg" width="700">
+        <img <img width="1280" alt="Capture d’écran 2023-12-14 à 20 42 30" src="https://github.com/rifaielarbi/web_sr/assets/153360442/a128c204-e82c-404c-b5fb-0110ff9a42a9">
+>
         </details>
 
 <details>
@@ -242,61 +246,8 @@ public Order getOrder(@PathVariable Long id){
 }
 ```
 
-<img src="captures/order-service-full-order.jpg" width="700">
+<img <img width="1280" alt="Capture d’écran 2023-12-14 à 20 41 47" src="https://github.com/rifaielarbi/web_sr/assets/153360442/838d4217-1e44-48b1-b67f-e3df88d8e08b">
+>
         </details>
         <details>
-        <summary style="font-size:15px;cursor:pointer">📌 6. BILLING-SERVICE avec consul config et vault (Click to expand 🖱)</summary>
-        <h5>Dependencies</h5>
-
-```javascript
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-consul-config</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-consul-discovery</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-vault-config</artifactId>
-</dependency>
-```
-<h5>Consul config</h5>
-<img src="captures/token-key-value.jpg" width="700">
-<h5>Controlleur de test</h5>
-
-```javascript
-@RestController
-public class ConsulConfigRestController {
-    @Autowired
-    private MyConsulConfig myConsulConfig;
-    @Autowired
-    private MyVaultConfig myVaultConfig;
-    @Value("${token.accessTokenTimeout}")
-    private long accessTokenTimeout;
-    @Value("${token.refreshTokenTimeout}")
-    private long refreshTokenTimeout;
-}
-``` 
-<h5>Avec class de configuration</h5>
-
-```java
-@RestController
-public class ConsulConfigRestController {
-    @Autowired
-    private MyConsulConfig myConsulConfig;
-    @Autowired
-    private MyVaultConfig myVaultConfig;
-    //@Value("${token.accessTokenTimeout}")
-    //private long accessTokenTimeout;
-    //@Value("${token.refreshTokenTimeout}")
-    //private long refreshTokenTimeout;
-    @GetMapping("/myConfig")
-    public Map<String,Object> myConfig(){
-        return Map.of("consulConfig",myConsulConfig, "vaultConfig",myVaultConfig);
-    }
-}
-```
-
-
+        <summary style="font-size:15px;cursor:pointer">📌 6. 
