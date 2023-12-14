@@ -232,7 +232,8 @@ public interface InventoryRestClientService {
 }
 ```
 <h5>Configuration</h5>
-<img src="captures/open-feign-config.jpg" width="700">
+<img <img width="637" alt="Capture d’écran 2023-12-14 à 20 56 24" src="https://github.com/rifaielarbi/web_sr/assets/153360442/15699e8e-666b-4c34-a48e-42f5a15f2c6a">
+>
 <h5>fullOrder</h5>
 
 ```javascript
