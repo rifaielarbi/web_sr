@@ -60,11 +60,14 @@ customerRepository.findAll().forEach(System.out::println);
 <details>
 <summary style="font-size:15px;cursor:pointer">📌 3. GATEWAY-SERVICE (Click to expand 🖱)</summary>
         <h5>Bean de configuration</h5>
-        <img src="captures/gateway-bean.jpg" width="700">
+        <img <img width="891" alt="Capture d’écran 2023-12-14 à 20 50 32" src="https://github.com/rifaielarbi/web_sr/assets/153360442/471cebac-1b3a-4b6d-ae4c-b5632ca46e9c">
+>
         <h5>Configuration de la Gateway</h5>
-        <img src="captures/gateway-properties.jpg" width="700">
+        <img <img width="540" alt="Capture d’écran 2023-12-14 à 20 53 23" src="https://github.com/rifaielarbi/web_sr/assets/153360442/bb5e412d-fa3f-450e-909c-c9696b720982">
+>
         <h5>Test de la gateway</h5>
-        <img src="captures/order-service-full-order.jpg" width="700">
+        <img <img width="1280" alt="Capture d’écran 2023-12-14 à 20 41 47" src="https://github.com/rifaielarbi/web_sr/assets/153360442/a5b25af6-ee78-4e1d-9bd0-46cd75c0c178">
+>
         </details>
 
 <details>
@@ -248,6 +251,3 @@ public Order getOrder(@PathVariable Long id){
 
 <img <img width="1280" alt="Capture d’écran 2023-12-14 à 20 41 47" src="https://github.com/rifaielarbi/web_sr/assets/153360442/838d4217-1e44-48b1-b67f-e3df88d8e08b">
 >
-        </details>
-        <details>
-        <summary style="font-size:15px;cursor:pointer">📌 6. 
