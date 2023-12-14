@@ -1,7 +1,8 @@
 <h1>Microservices E-Commerce</h1>
 <p>Welcome to our microservices-based e-commerce application, utilizing technologies such as Consul Discovery, Spring Cloud Config, Spring Cloud Gateway, Angular, and other specific services.</p>
 <h3>Architecture:</h3>
-<img src="captures/capture1.png"></img>
+<img src="<img width="822" alt="captures:capture1" src="https://github.com/rifaielarbi/web_sr/assets/153360442/a71f7a5d-8440-406f-977f-da4ab3e9d6f9">
+"></img>
 <details>
 <summary style="font-size:15px;cursor:pointer">📌 1. CONFIG SERVICE: (Click to expand 🖱)</summary>
         <h5>Consul registered services:</h5>
